@@ -1,12 +1,14 @@
 {{#each this}}
 <li>
-  <h1>input.value</h1>
-  <h2>{{dt}}</h2>
-  <p>{{sunrise}}</p>
-  <p>{{sunset}}</p>
-  <p>{{presure}}</p>
-  <p>{{humidity}}</p>
-  <p>{{weather.main}}<span>{{weather.icon}}</span></p>
-  <p>{{speed}}</p>
+  <h1>Город:{{name}}</h1>
+  <h2>Дата:{{dt}}</h2>
+  <p>температура:{{main.temp}}&#8451</p>
+  <p>Восход солнца:{{sys.sunrise}}</p>
+  <p>Закат солнца:{{sys.sunset}}</p>
+  <p>Давление:{{main.pressure}}</p>
+  <p>Влажность:{{main.humidity}}%</p>
+  <img src="https://openweathermap.org/img/w/{{weather.0.icon}}.png" alt="{{weather.main}}">
+  <p>Скорость ветра:{{wind.speed}}m/s</p>
 </li>
 {{/each}}
+
