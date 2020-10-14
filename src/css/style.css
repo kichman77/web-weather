@@ -2,3 +2,32 @@ body {
   background-color: black;
   color: wheat;
 }
+#weatherInput {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+.daysList {
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+}
+.daysList:not(:last-child) {
+  margin-right: 10px;
+}
+.weather-item {
+  display: flex;
+  flex-flow: row;
+}
+.weather-text {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid;
+}
+.card{
+  display: block;
+  align-items: center;
+}

@@ -1,14 +1,13 @@
 {{#each this}}
-<li>
-  <h1>Город:{{name}}</h1>
-  <h2>Дата:{{dt}}</h2>
-  <p>температура:{{main.temp}}&#8451</p>
-  <p>Восход солнца:{{sys.sunrise}}</p>
-  <p>Закат солнца:{{sys.sunset}}</p>
-  <p>Давление:{{main.pressure}}</p>
-  <p>Влажность:{{main.humidity}}%</p>
-  <img src="https://openweathermap.org/img/w/{{weather.0.icon}}.png" alt="{{weather.main}}">
-  <p>Скорость ветра:{{wind.speed}}m/s</p>
+<li class="weather-item">
+  <h1>Город : {{name}}</h1>
+  <h2>Дата : {{dt}}</h2>
+  <p class="weather-text">температура : {{main.temp}}&#8451</p>
+  <p class="weather-text">Восход солнца : {{sys.sunrise}}</p>
+  <p class="weather-text">Закат солнца : {{sys.sunset}}</p>
+  <p class="weather-text">Давление : {{main.pressure}}</p>
+  <p class="weather-text">Влажность : {{main.humidity}}%</p>
+  <p class="weather-text">Скорость ветра : {{wind.speed}}m/s</p>
+  <img class="card" src="https://openweathermap.org/img/w/{{weather.0.icon}}.png" alt="{{weather.main}}">
 </li>
 {{/each}}
-
